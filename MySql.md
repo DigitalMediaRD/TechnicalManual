@@ -35,7 +35,7 @@
 
 ## 配置Unity3D
 
-Unity3D要使用MySql需要导入相关配置文件，可以安装```mysql-connector-net-9.0.0.msi```然后从文件目录中或直接下载[MySql.Data.dll](https://kdocs.cn/l/cspGSFIt561d)文件。将该文件复制进Unity3D项目内
+Unity3D要使用MySql需要导入相关配置文件，文件版本不宜过高。目前测试是可以[安装](https://downloads.mysql.com/archives/c-net/)```mysql-connector-net-6.10.9.msi```，然后从安装目录下找到```MySql.Data.dll```文件。将该文件复制进Unity3D项目内的```Assets/Plugins```内
 
 <!-- 
 ## 配置VisualStudio 2022
