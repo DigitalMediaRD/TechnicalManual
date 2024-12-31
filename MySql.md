@@ -1,9 +1,10 @@
 # MySql
 在使用CMD窗口进行相关配置或者启动数据库的时候，打开CMD窗口要右键选择```以管理员身份```启动，否则会由于用户权限问题导致设置失败
+<!-- 
 ## 完整参考
 [网络配置教程](https://cloud.tencent.com/developer/article/1998427)
-
-## 简化参考
+-->
+## 参考
 解压并安装[MySql&Unity3D相关配置安装包](https://kdocs.cn/l/cbDUd1og4jCz)，在configer窗口配置管理员账户密码。
 
 将```mysql-9.0.1-winx64.msi```的安装地址如 ```C:\Program Files\MySQL\MySQL Server 9.0\bin```添加到到环境变量，以管理员权限打开```CMD```窗口后依次输入
@@ -33,9 +34,12 @@
     
     show global variables like 'port';
 
+## 配置VisualStudio
+测试版本是VisualStudio 2022，新建一个空白工程，在最上方的工具栏处依次选择```项目-管理NuGet程序包```，在打开的新标签页中搜索```MySQL.Data```并安装。成功后如下图所示
+
 ## 配置Unity3D
 
-Unity3D要使用MySql需要导入相关配置文件，文件版本不宜过高。目前测试是可以[安装](https://downloads.mysql.com/archives/c-net/)```mysql-connector-net-6.10.9.msi```，然后从安装目录下找到```MySql.Data.dll```文件。将该文件复制进Unity3D项目内的```Assets/Plugins```内
+在完成上文的配置操作后，Unity3D要使用MySql需要导入相关配置文件，文件版本不宜过高。目前测试是可以[安装](https://downloads.mysql.com/archives/c-net/)```mysql-connector-net-6.10.9.msi```，然后从安装目录下找到```MySql.Data.dll```文件。将该文件复制进Unity3D项目内的```Assets/Plugins```内
 
 <!-- 
 ## 配置VisualStudio 2022
