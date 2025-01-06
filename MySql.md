@@ -7,7 +7,7 @@
 ## 参考
 解压并安装[MySql&Unity3D相关配置安装包](https://kdocs.cn/l/caYrXJ5B3avH)，在configer窗口配置管理员账户密码。
 
-将```mysql-9.0.1-winx64.msi```的安装地址如 ```C:\Program Files\MySQL\MySQL Server 9.0\bin```添加到到环境变量，以管理员权限打开```CMD```窗口后依次输入
+将```mysql-9.0.1-winx64.msi```的安装地址如 ```C:\Program Files\MySQL\MySQL Server 9.0\bin```添加到到环境变量，以管理员权限打开```CMD```窗口后依次输入下列命令并按回车键等待运行结果，双斜杠以及后面的汉字不需要复制进命令行
     
     mysqld --install //成功代表安装相关服务
     mysqld --initialize --console //初始化并生成随机密码如下
