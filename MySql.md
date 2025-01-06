@@ -5,7 +5,7 @@
 [网络配置教程](https://cloud.tencent.com/developer/article/1998427)
 -->
 ## 参考
-解压并安装[MySql&Unity3D相关配置安装包](https://kdocs.cn/l/cbDUd1og4jCz)，在configer窗口配置管理员账户密码。
+解压并安装[MySql&Unity3D相关配置安装包](https://kdocs.cn/l/caYrXJ5B3avH)，在configer窗口配置管理员账户密码。
 
 将```mysql-9.0.1-winx64.msi```的安装地址如 ```C:\Program Files\MySQL\MySQL Server 9.0\bin```添加到到环境变量，以管理员权限打开```CMD```窗口后依次输入
     
@@ -26,8 +26,9 @@
     mysql -u root -p
 
 两种情况：
-- 一、在界面配置过程中，若设置了Accounts and Roles的密码，此时输入设置的密码
-- 二、界面配置过程中未设置，则输入上文生成的随机密码。之后进入数据库服务管理模式，此时课修改数据库登陆密码。例如想修改后的新密码为```20241214```，可输入下列命令。根据喜好自行替换成自己熟悉的密码，在修改后同样记得保存无误后
+- 一、在界面配置过程中，设置了Accounts and Roles的密码如下，
+![](https://github.com/DigitalMediaRD/TechnicalManual/blob/main/src/MySql/001.png)此时在命令行窗口输入设置的密码
+- 二、界面配置过程中未设置密码，则输入上文生成的随机密码。之后进入数据库服务管理模式，此时课修改数据库登陆密码。例如想修改后的新密码为```20241214```，可输入下列命令。根据喜好自行替换成自己熟悉的密码，在修改后同样记得保存无误后
 
 
         alter user 'root'@'localhost' identified by '20241214';
@@ -40,10 +41,11 @@
 
 ## 配置VisualStudio
 测试版本是VisualStudio 2022，新建一个空白工程，在最上方的工具栏处依次选择```项目-管理NuGet程序包```，在打开的新标签页中搜索```MySQL.Data```并安装。成功后如下图所示
+![](https://github.com/DigitalMediaRD/TechnicalManual/blob/main/src/MySql/100.png)
 
 ## 配置Unity3D
 
-在完成上文的配置操作后，Unity3D要使用MySql需要导入相关配置文件，文件版本不宜过高。目前测试是可以[安装](https://downloads.mysql.com/archives/c-net/)```mysql-connector-net-6.10.9.msi```，然后从安装目录下找到```MySql.Data.dll```文件。将该文件复制进Unity3D项目内的```Assets/Plugins```内
+在完成上文的配置操作后，Unity3D要使用MySql需要导入相关配置文件，文件版本不宜过高。目前测试是可以[安装](https://downloads.mysql.com/archives/c-net/)文首提供的```mysql-connector-net-6.10.9.msi```，然后从安装目录下找到```MySql.Data.dll```文件。将该文件复制进Unity3D项目内的```Assets/Plugins```内
 
 <!-- 
 ## 配置VisualStudio 2022
