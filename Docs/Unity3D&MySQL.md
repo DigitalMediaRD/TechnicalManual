@@ -7,7 +7,7 @@ Unity3D&MySQL数据库的基础案例，复现案例的前提是掌握一种面�
 ## Unity3D连接本地数据库
 
 [源码文件](https://github.com/DigitalMediaRD/TechnicalManual/blob/main/Examples/MySQL/MySQLLink.cs)包含连接数据库、查询数据库中的数据表以及创建数据表三个基础功能，文件UML结构如下图
-![]()
+![](https://github.com/DigitalMediaRD/TechnicalManual/blob/main/Docs/src/Unity3D%26MySQL.jpg)
 
 其中```sqlSer```中的字符串意义如下表，查看自己计算机的相关配置，修改列标为值的数据
 
