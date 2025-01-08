@@ -42,6 +42,7 @@
 ## 配置VisualStudio
 测试版本是VisualStudio 2022，新建一个空白工程，在最上方的工具栏处依次选择```项目-管理NuGet程序包```，在打开的新标签页中搜索```MySQL.Data```并安装。成功后如下图所示
 ![](https://github.com/DigitalMediaRD/TechnicalManual/blob/main/src/MySql/100.png)
+若无法在NuGet管理器内搜索到相关工具包，参照[该文档](https://blog.csdn.net/weixin_44831306/article/details/107876791)设置
 
 ## 配置Unity3D
 
